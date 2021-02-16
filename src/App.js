@@ -1,7 +1,8 @@
 import React from 'react'
-import Header from './components/Header'
-import Table from './components/Table'
-import Footer from './components/Footer'
+import Header from './components/header'
+import Search from './components/searchBar'
+import Table from './components/table'
+import Footer from './components/footer'
 
 
 function App() {
@@ -9,13 +10,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <SearchBar />
+      <Search />
       <Table />
       <Footer />
     </div>
   );
-}
-  
 }
 
 export default App;
