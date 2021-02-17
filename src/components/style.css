@@ -26,12 +26,20 @@
 }
 
 .input {
+    margin: 20px;
     width: 30%;
-    padding: 0px 10px 0px 10px;
+    padding: 5px;
 }
 
 /* ================== table ================== */
 
+.table {
+    margin: 20px 15px 10px 15px;
+}
+
+.table th {
+    color: #6d2e46;
+}
 
 /* ================== footer ================= */
 
@@ -43,4 +51,5 @@
     bottom: 0;
     width: 100%;
     text-align: center;
+    padding-top: 10px;
 }
