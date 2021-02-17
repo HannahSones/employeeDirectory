@@ -4,9 +4,9 @@ import './style.css'
 function Footer(){
     return (
         <footer>
-            <ul className="footer">
-                <li>Copyright © Hannah Sones | All Rights Reserved</li>
-            </ul>
+            <div className="footer">
+                <p>Copyright © Hannah Sones | All Rights Reserved</p>
+            </div>
         </footer>
     )
 }

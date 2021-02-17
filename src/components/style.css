@@ -1,12 +1,46 @@
 
-
-
 /* ================== header ================= */
-
+.header {
+    background-color: #6d2e46;
+    color: #ece2d0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
 
 
 /* ================== search ================= */
 
+.searchBox {
+    background-color: #d5b9b2;
+    padding: 15px 0px 10px 0px;
+    width: 100%;
+}
+.searchBox button{
+        border: 1px solid #6d2e46;
+    }
+    .searchBox button:hover {
+        background-color: #6d2e46;
+        color:white;
+}
+
+.input {
+    width: 30%;
+    padding: 0px 10px 0px 10px;
+}
+
+/* ================== table ================== */
 
 
 /* ================== footer ================= */
+
+.footer {
+    background-color: #6d2e46;
+    color: #ece2d0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
