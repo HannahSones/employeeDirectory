@@ -10,9 +10,20 @@ function Table () {
                 <th>Name</th>
                 <th>Phone Number</th>
                 <th>Email</th>
-                <th>Location</th>
+                <th>DoB</th>
                 </tr>
             </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="#" alt="profile"></img>
+                    </td>
+                    <td>Name Surname</td>
+                    <td>Phone</td>
+                    <td>Email</td>
+                    <td>__/__/___</td>
+                </tr>
+            </tbody>
             </table>
         </div>
     )
