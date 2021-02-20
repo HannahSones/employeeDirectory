@@ -1,10 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Data from './data';
 
 const Table = () => {
 
     const [ fetchResults, setFetchResults ] = useState([]);
 
+    useEffect(() => {
+        const fetchData = async () => {
+          const queryURL = 'https://randomuser.me/api/?results=30'
+          const response = await fetch(queryURL);
+          
+          if(response.ok){
+            const employeeData = await response.json();
+            setFetchResults(employeeData.results);
+          } else {
+            console.log('fetch error', response.status);
+          }
+        }
+        fetchData();
+      },[]);
+
+      
     const sortEmail = () => {
         const sorted = fetchResults.sort( function(item1, item2){
             if(item1.email < item2.email){
