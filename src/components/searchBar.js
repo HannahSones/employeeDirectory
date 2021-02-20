@@ -4,7 +4,7 @@ import "./style.css";
 
 const Search = () => {
 
-    const [ fetchResults, setFetchResults ] = useState();
+    const [ fetchResults, setFetchResults ] = useState([]);
     const [ search, setSearch ] = useState();
 
     function getSearchResults(){
@@ -13,7 +13,6 @@ const Search = () => {
         console.log(searchedUser)
         setFetchResults(searchedUser)
     }
-
 
     function handleInputChange(event){
         setSearch(event.target.value)
