@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from "react";
-import API from "../api";
-
 
 const Data = () => {
 
@@ -12,18 +10,15 @@ const Data = () => {
         const response = await fetch(queryURL);
         
         if(response.ok){
-
           const employeeData = await response.json();
-
           setFetchResults(employeeData.results);
         } else {
           console.log('fetch error', response.status);
-          
         }
       }
       fetchData();
-  
     },[]);
+
   
     return (
       <tbody>
@@ -43,4 +38,4 @@ const Data = () => {
     )
   }
 
- export default Data
+  export default Data
