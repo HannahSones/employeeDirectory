@@ -20,7 +20,7 @@ const Table = () => {
         fetchData();
       },[]);
 
-      
+
     const sortEmail = () => {
         const sorted = fetchResults.sort( function(item1, item2){
             if(item1.email < item2.email){
@@ -37,10 +37,10 @@ const Table = () => {
 
     const sortLocation = () => {
         const sorted = fetchResults.sort( function(item1, item2){
-            if(item1.location < item2.location){
+            if(item1.location.country < item2.location.country){
                 return -1
             }
-            if (item1.location > item2.location){
+            if (item1.location.country > item2.location.country){
                 return 1
             }
             return 0
@@ -62,7 +62,7 @@ const Table = () => {
                 </tr>
             </thead>
             <>
-            <Data />
+            <Data list={fetchResults}/>
             </>
             </table>
         </div>
