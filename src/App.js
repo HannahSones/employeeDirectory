@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/header'
 import Search from './components/searchBar'
 import Table from './components/table'
+import Data from './components/data'
 import Footer from './components/footer'
 
 

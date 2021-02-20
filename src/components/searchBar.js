@@ -10,7 +10,6 @@ function searchBar () {
                 className="input"
                     type="search"
                     placeholder="Search name"
-                    // onChange={e => context.handleSearchChange(e)}
                 />
                 <button className="btn btn-light" type="submit">
                     Search

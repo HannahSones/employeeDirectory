@@ -1,6 +1,8 @@
 import React from 'react'
+import Data from './data'
 
-function Table () {
+function Table(props){
+
     return (
         <div>
             <table class="table table-striped table-hover">
@@ -8,59 +10,17 @@ function Table () {
                 <tr>
                 <th>Profile</th>
                 <th>Name</th>
+                <th>Email<button className='filter' onClick={props.sortEmail}><i className="fas fa-filter"></i></button></th>
                 <th>Phone Number</th>
-                <th>Email</th>
-                <th>DoB</th>
+                <th>Location<button className='filter' onClick={props.sortLocation}><i className="fas fa-filter"></i></button></th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <img src="#" alt="profile"></img>
-                    </td>
-                    <td>Name Surname</td>
-                    <td>Phone</td>
-                    <td>Email</td>
-                    <td>__/__/___</td>
-                </tr>
-            </tbody>
+            <>
+            <Data />
+            </>
             </table>
         </div>
     )
 }
-
-// function Table(props){
-
-//     <table class="table table-striped table-hover">
-//   ...
-// </table>
-
-//     return (
-//         <table style={{width: "100%"}}>
-//             <thead>
-//                 <tr>
-//                 <th>Profile</th>
-//                 <th>Name</th>
-//                 <th>Phone Number <button className='filter' onClick={props.sortNumber}><i className="fas fa-filter"></i></button></th>
-//                 <th>Email <button className='filter' onClick={props.sortEmail}><i className="fas fa-filter"></i></button></th>
-//                 <th>Location</th>
-//                 </tr>
-//             </thead>
-//             <tbody>
-//                 {props.list.map(user => 
-//                 <tr style={{borderTop: "2px solid gray"}}>
-//                 <td>
-//                     <img src={user.picture.thumbnail} alt="profile"/>
-//                 </td>
-//                 <td>{user.name.first} {user.name.last}</td>
-//                 <td>{user.phone}</td>
-//                 <td>{user.email}</td>
-//                 <td>{user.location.state}, {user.location.country}</td>
-//                 </tr>
-//                 )}
-//             </tbody>
-//         </table>
-//     )
-// }
 
 export default Table
