@@ -42,6 +42,16 @@
     color: #6d2e46;
 }
 
+.filter {
+    color: #d5b9b2;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
 
 /* ================== footer ================= */
 

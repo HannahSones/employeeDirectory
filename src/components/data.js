@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 
 const Data = () => {
 
@@ -6,7 +6,7 @@ const Data = () => {
   
     useEffect(() => {
       const fetchData = async () => {
-        const queryURL = 'https://randomuser.me/api/?results=20'
+        const queryURL = 'https://randomuser.me/api/?results=30'
         const response = await fetch(queryURL);
         
         if(response.ok){

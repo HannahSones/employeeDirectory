@@ -1,21 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 
 const Search = () => {
 
-    const [ fetchResults, setFetchResults ] = useState([]);
-    const [ search, setSearch ] = useState("");
+    const [ fetchResults, setFetchResults ] = useState();
+    const [ search, setSearch ] = useState();
 
     function getSearchResults(){
         console.log('Searching for:', search)
         const searchedUser = fetchResults.filter(fetchResults => search.indexOf(fetchResults.name.first)> -1 || search.indexOf(fetchResults.name.last)> -1)
         console.log(searchedUser)
         setFetchResults(searchedUser)
-    }
-
-    function clearSearch(){
-        setSearch("")
     }
 
 
