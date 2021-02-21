@@ -1,7 +1,6 @@
 {
   "name": "employeedirectory",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://hannahsones.github.io/employeedirectory/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
