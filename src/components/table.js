@@ -31,7 +31,6 @@ const Table = () => {
             }
             return 0
         })
-        console.log('Sorted List: ', sorted)
         setFetchResults([...sorted])
     }
 
@@ -45,7 +44,6 @@ const Table = () => {
             }
             return 0
         })
-        console.log('Sorted List: ', sorted)
         setFetchResults([...sorted])
     }
 
@@ -62,7 +60,7 @@ const Table = () => {
                 </tr>
             </thead>
             <>
-            <Data list={fetchResults}/>
+            <Data list={fetchResults} />
             </>
             </table>
         </div>
