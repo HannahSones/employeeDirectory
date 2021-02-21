@@ -36,6 +36,7 @@ By clicking on the filter buttons in the email and location columns, a user can 
 1. Clone the code from the GitHub repo
 2. Open project directory, then install all required dependencies
 3. Enter `yarn start` to run the application in development mode in your localhost
+4. The page will reload if you make edits. You will also see any lint errors in the console.
 
 ------------------
 ## Deployed link   
