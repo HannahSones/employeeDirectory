@@ -25,8 +25,7 @@ I found this project quite testing initially as I had to get my head around work
 ----------
 
 ## Functionality  
-The following screen record demonstrates the employee directory's functionality.   
-![Employee Directory video walkthrough]()   
+![Employee Directory dashboard](https://github.com/HannahSones/employeedirectory/blob/main/public/EmployeeDirectoryDashboard.png)   
 
 By clicking on the filter buttons in the email and location columns, a user can filter employees alphabetically by these criteria. There is also a search bar to find a specific employee by name.
 
@@ -40,7 +39,7 @@ By clicking on the filter buttons in the email and location columns, a user can 
 
 ------------------
 ## Deployed link   
-Or you can view the live deployment of the application on [Github Pages]().
+Or you can view the live deployment of the application on [Github Pages](https://hannahsones.github.io/employeedirectory/).
 
 -------------
 ## Further Development
